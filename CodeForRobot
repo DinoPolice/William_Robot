@@ -4,7 +4,7 @@ import random
 
 commands = ["flip a coin", "roll a dice", "tell me a fun fact"]
 questions = ["how do i get free robux?", "how old are you?", "how do you work?", "how are you?", "is cleetus fat?", "what day is it?", "who is the best youtuber?", "what is your favorite food?"]
-comments = ["your cool!", "hi!", "good morning!", "good night!"]
+comments = ["youre cool!", "hi!", "good morning!", "good night!"]
 other = ["amogus"]
 #-----------------------------------------
 
@@ -91,7 +91,7 @@ def Answer(x):
 
 def Coversation(x):
 	if user_input in comments:
-		if user_input == "your cool!":
+		if user_input == "youre cool!":
 			print("Thank you!")
 		elif user_input == "hi!":
 			print("Hello!")
