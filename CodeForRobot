@@ -1,0 +1,136 @@
+#-----------------------------------------
+import datetime
+import random
+
+commands = ["flip a coin", "roll a dice", "tell me a fun fact"]
+questions = ["how do i get free robux?", "how old are you?", "how do you work?", "how are you?", "is cleetus fat?", "what day is it?", "who is the best youtuber?", "what is your favorite food?"]
+comments = ["your cool!", "hi!", "good morning!", "good night!"]
+other = ["amogus"]
+#-----------------------------------------
+
+#-----------------------------------------
+def FlipCoin(x):
+	x=random.randint(1,2)
+	
+	if str(x) == ("1"):
+		print("Its heads.")
+	else:
+		print("Its tails.")
+
+def RollDice(x):
+	x=random.randint(1,6)
+	
+	if str(x) == ("1"):
+		print("Its one.")
+	elif str(x) == ("2"):
+		print("Its two.")
+	elif str(x) == ("3"):
+		print("Its three.")
+	elif str(x) == ("4"):
+		print("Its four.")
+	elif str(x) == ("5"):
+		print("Its five.")
+	else:
+		print("Its six.")
+
+def FunFact(x):
+	x=random.randint(1,6)
+	
+	if str(x) == ("1"):
+		print("Three presidents, all Founding Fathers—John Adams, Thomas Jefferson, and James Monroe—died on July 4. Presidents Adams and Jefferson also died the same year, 1826; President Monroe died in 1831. Coincidence? You decide.")
+	elif str(x) == ("2"):
+		print("Sliced bread was first manufactured by machine and sold in the 1920s by the Chillicothe Baking Company in Missouri. It was the greatest thing since…unsliced bread?")
+	elif str(x) == ("3"):
+		print("The Four Corners is the only spot in the US where you can stand in four states at once: Utah, Colorado, Arizona and New Mexico.")
+	elif str(x) == ("4"):
+		print("Experiments in universities have actually been carried out to figure out how many licks it takes to get to the center of a Tootsie Pop, both with machine and human lickers (because this is important scientific knowledge!). The results ranged from 252 to 411.")
+	else:
+		print("There is a jellyfish called the Turritopsis Dohrnii that can recycle its age back to its original state. Because of this animals unique ability, it is known as the immortal jellyfish. It can only ever die if its eaten.")
+
+def TrackDate(x):
+	day=datetime.datetime.now()
+
+	hellod=str(day)
+	year=hellod[0:4]
+	month=hellod[5:7]
+	date=hellod[8:10]
+
+	print("Today is "+month+"/"+date+"/"+year+".")
+#-----------------------------------------
+
+#-----------------------------------------
+def Command(x):
+	if user_input in commands:
+		if user_input == "flip a coin":
+			FlipCoin("x")
+		elif user_input == "roll a dice":
+			RollDice("x")
+		else:
+			user_input == "tell me a fun fact"
+			FunFact("x")
+
+def Answer(x):
+	if user_input in questions:
+		if user_input == "how do i get free robux?":
+			print("there is no way to get free robux.")
+		elif user_input == "how old are you?":
+			print("several months.")
+		elif user_input == "how do you work?":
+			print("I scan your input and print my response!")
+		elif user_input == "how are you?":
+			print("I'm good!")
+		elif user_input == "is cleetus fat?":
+			print("no, he just has big bones!")
+		elif user_input == "what day is it?":
+			TrackDate("x")
+		elif user_input == "who is the best youtuber?":
+			print("Flamingo and Energized Fanta.")
+		else:
+			user_input == "what is your favorite food?"
+			print("Nuts, screws, and bolts!")
+
+def Coversation(x):
+	if user_input in comments:
+		if user_input == "your cool!":
+			print("Thank you!")
+		elif user_input == "hi!":
+			print("Hello!")
+		elif user_input == "good morning!":
+			print("Rise and Shine!")
+		else: 
+			user_input == "good night!"
+			print("sleep tight!")
+
+def Other(x):
+	if user_input in other:
+		if user_input == "amogus":
+			print("sussy!")
+
+def Load(x):
+		print("Hello! I'm William, an automated chat bot that learns new things every now and then! I hope you enjoy my program!")
+		print(" ")
+		print("you have asked...")
+		print(user_input)
+		print(" ")
+		print("computing response...")
+		print("computing response...")
+		print("computing response...")
+		print(" ")
+
+while True:
+	Load("x")
+#-----------------------------------------
+
+#-----------------------------------------
+	if user_input in commands:
+		Command("x")
+	elif user_input in questions:
+		Answer("x")
+	elif user_input in comments:
+		Coversation("x")
+	elif user_input in other:
+		Other("x")
+	else:
+		print("no response found.")
+	break
+#-----------------------------------------
