@@ -107,9 +107,7 @@ def Other(x):
 			print("sussy!")
 
 def Load(x):
-		print("Hello! I'm William, an automated chat bot that learns new things every now and then! I hope you enjoy my program!")
-		print(" ")
-		print("you have asked...")
+		print("You have asked...")
 		print(user_input)
 		print(" ")
 		print("computing response...")
